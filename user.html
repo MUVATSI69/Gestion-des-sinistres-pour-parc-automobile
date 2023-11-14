@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gérer Utilisateur</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Gérer Utilisateur</h1>
+    </header>
+
+    <nav>
+        <a href="acadmin.html">Accueil</a>
+        <a href="user.html">Gérer Utilisateur</a>
+        <a href="auto.html">Gérer Automobile</a>
+    </nav>
+
+    <section>
+        <h2>Ajouter Utilisateur</h2>
+        <!-- Formulaire d'ajout d'utilisateur -->
+        <form action="#" method="post">
+            <!-- champs de formulaire -->
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="email">Adresse e-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="privilege">Privilège:</label>
+            <select id="privilege" name="privilege" required>
+                <option value="conducteur">Conducteur</option>
+                <option value="gestionnaire">Gestionnaire</option>
+            </select>
+
+            <label for="numPermis">Numéro du permis:</label>
+            <input type="text" id="numPermis" name="numPermis">
+
+            <label for="motDePasse">Mot de passe:</label>
+            <input type="password" id="motDePasse" name="motDePasse" required>
+
+            <button type="submit">Ajouter Utilisateur</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Modifier Utilisateur</h2>
+        <!-- Formulaire de modification d'utilisateur -->
+        <form action="#" method="post">
+            <!-- champs de formulaire -->
+            <label for="utilisateur">Sélectionnez l'utilisateur à modifier:</label>
+            <select id="utilisateur" name="utilisateur" required>
+                <!-- Liste des utilisateurs récupérée depuis la base de données -->
+                <option value="utilisateur1">Utilisateur 1</option>
+                <option value="utilisateur2">Utilisateur 2</option>
+            </select>
+
+            <!-- champs de modification -->
+            <label for="nouveauNom">Nouveau Nom:</label>
+            <input type="text" id="nouveauNom" name="nouveauNom" required>
+
+            <label for="nouveauPrenom">Nouveau Prénom:</label>
+            <input type="text" id="nouveauPrenom" name="nouveauPrenom" required>
+
+            <label for="nouveauEmail">Nouvelle Adresse e-mail:</label>
+            <input type="email" id="nouveauEmail" name="nouveauEmail" required>
+
+            <label for="nouveauPrivilege">Nouveau Privilège:</label>
+            <select id="nouveauPrivilege" name="nouveauPrivilege" required>
+                <option value="conducteur">Conducteur</option>
+                <option value="gestionnaire">Gestionnaire</option>
+            </select>
+
+            <label for="nouveauNumPermis">Nouveau Numéro du permis:</label>
+            <input type="text" id="nouveauNumPermis" name="nouveauNumPermis">
+
+            <label for="nouveauMotDePasse">Nouveau Mot de passe:</label>
+            <input type="password" id="nouveauMotDePasse" name="nouveauMotDePasse" required>
+
+            <button type="submit">Modifier Utilisateur</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Supprimer Utilisateur</h2>
+        <!-- Formulaire de suppression d'utilisateur -->
+        <form action="#" method="post">
+            <!-- champs de formulaire ici -->
+            <label for="utilisateurSupprimer">Sélectionnez l'utilisateur à supprimer:</label>
+            <select id="utilisateurSupprimer" name="utilisateurSupprimer" required>
+                <!-- Liste des utilisateurs récupérée depuis la base de données -->
+                <option value="utilisateur1">Utilisateur 1</option>
+                <option value="utilisateur2">Utilisateur 2</option>
+            </select>
+
+            <button type="submit">Supprimer Utilisateur</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Détail Utilisateur</h2>
+        <!-- Afficher les détails des utilisateurs -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Adresse e-mail</th>
+                    <th>Privilège</th>
+                    <th>Numéro du permis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Les données des utilisateurs récupérées depuis la base de données -->
+                <tr>
+                    <td>Utilisateur 1</td>
+                    <td>Nom1</td>
+                    <td>nom1@email.com</td>
+                    <td>Conducteur</td>
+                    <td>123456789</td>
+                </tr>
+                <tr>
+                    <td>Utilisateur 2</td>
+                    <td>Nom2</td>
+                    <td>nom2@email.com</td>
+                    <td>Gestionnaire</td>
+                    <td></td> <!-- Le gestionnaire n'a pas de numéro de permis  -->
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>Copyright © 2023 Muvatsi KYAHIMBA MESSAGER </p>
+    </footer>
+
+</body>
+</html>

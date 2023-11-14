@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gérer Automobile</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Gérer Automobile</h1>
+    </header>
+
+    <nav>
+        <a href="acadmin.html">Accueil</a>
+        <a href="user.html">Gérer Utilisateur</a>
+        <a href="auto.html">Gérer Automobile</a>
+    </nav>
+
+    <section>
+        <h2>Ajouter Automobile</h2>
+        <!-- Formulaire d'ajout d'automobile -->
+        <form action="#" method="post">
+            <!-- champs de formulaire -->
+            <label for="marque">Marque:</label>
+            <input type="text" id="marque" name="marque" required>
+
+            <label for="modele">Modèle:</label>
+            <input type="text" id="modele" name="modele" required>
+
+            <label for="annee">Année:</label>
+            <input type="number" id="annee" name="annee" required>
+
+            <label for="immatriculation">Immatriculation:</label>
+            <input type="text" id="immatriculation" name="immatriculation" required>
+
+            <label for="conducteur">Conducteur:</label>
+            <select id="conducteur" name="conducteur" required>
+                <!-- Liste des conducteurs récupérée depuis la base de données -->
+                <option value="conducteur1">Conducteur 1</option>
+                <option value="conducteur2">Conducteur 2</option>
+            </select>
+
+            <button type="submit">Ajouter Automobile</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Modifier Automobile</h2>
+        <!-- Formulaire de modification d'automobile -->
+        <form action="#" method="post">
+            <!-- champs de formulaire -->
+            <label for="automobile">Sélectionnez l'automobile à modifier:</label>
+            <select id="automobile" name="automobile" required>
+                <!-- Liste des automobiles récupérée depuis la base de données -->
+                <option value="automobile1">Automobile 1</option>
+                <option value="automobile2">Automobile 2</option>
+            </select>
+
+            <!-- Les champs de modification ici -->
+            <label for="nouvelleMarque">Nouvelle Marque:</label>
+            <input type="text" id="nouvelleMarque" name="nouvelleMarque" required>
+
+            <label for="nouveauModele">Nouveau Modèle:</label>
+            <input type="text" id="nouveauModele" name="nouveauModele" required>
+
+            <label for="nouvelleAnnee">Nouvelle Année:</label>
+            <input type="number" id="nouvelleAnnee" name="nouvelleAnnee" required>
+
+            <label for="nouvelleImmatriculation">Nouvelle Immatriculation:</label>
+            <input type="text" id="nouvelleImmatriculation" name="nouvelleImmatriculation" required>
+
+            <label for="nouveauConducteur">Nouveau Conducteur:</label>
+            <select id="nouveauConducteur" name="nouveauConducteur" required>
+                <!-- Liste des conducteurs récupérée depuis la base de données -->
+                <option value="conducteur1">Conducteur 1</option>
+                <option value="conducteur2">Conducteur 2</option>
+            </select>
+
+            <button type="submit">Modifier Automobile</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Supprimer Automobile</h2>
+        <!-- Formulaire de suppression d'automobile -->
+        <form action="#" method="post">
+            <!-- champs de formulaire -->
+            <label for="automobileSupprimer">Sélectionnez l'automobile à supprimer:</label>
+            <select id="automobileSupprimer" name="automobileSupprimer" required>
+                <!-- Liste des automobiles récupérée depuis la base de données -->
+                <option value="automobile1">Automobile 1</option>
+                <option value="automobile2">Automobile 2</option>
+            </select>
+
+            <button type="submit">Supprimer Automobile</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Détail Automobile</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Marque</th>
+                    <th>Modèle</th>
+                    <th>Année</th>
+                    <th>Immatriculation</th>
+                    <th>Conducteur</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Les données des automobiles récupérées depuis la base de données -->
+                <tr>
+                    <td>Automobile 1</td>
+                    <td>Marque1</td>
+                    <td>Modèle1</td>
+                    <td>2020</td>
+                    <td>ABC123</td>
+                    <td>Conducteur 1</td>
+                </tr>
+                <tr>
+                    <td>Automobile 2</td>
+                    <td>Marque2</td>
+                    <td>Modèle2</td>
+                    <td>2018</td>
+                    <td>XYZ789</td>
+                    <td>Conducteur 2</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>Copyright © 2023 Muvatsi KYAHIMBA MESSAGER</p>
+    </footer>
+
+</body>
+</html>
